@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: green;
+    border: solid green 6px;
+    padding-bottom: 70px;
+    font-size: larger;
+}
