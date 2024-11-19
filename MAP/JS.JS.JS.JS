@@ -7,10 +7,14 @@
 // const words = ["hello", "world", "javascript"];
 // console.log(words.map((entry) => entry.toUpperCase()));
 
-const people = [
-  { name: "Alice", age: 25 },
+// const people = [
+//   { name: "Alice", age: 25 },
 
-  { name: "Bob", age: 30 },
+//   { name: "Bob", age: 30 },
 
-  { name: "Charlie", age: 35 },
-];
+//   { name: "Charlie", age: 35 },
+// ];
+// console.log(people.map((entry) => entry.name));
+
+const items = ["Home", "About", "Contact"];
+console.log(items.map((entry) => " <li> ${entry.items} </li>"));
