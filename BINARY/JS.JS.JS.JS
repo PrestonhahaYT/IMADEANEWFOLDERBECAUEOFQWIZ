@@ -1,14 +1,12 @@
 // TODO: Make the binary convert
+// (peramiter)
 
-const binary = document.querySelector("#binary");
-binaryCheck();
 
-function binaryCheck() {
-  if (binary <= 1 && binary > 0) {
-    convert();
-  } else alert("NOT VALID, USE 1s AND 0s BUD!");
-}
-function convert() {
-  binary;
-  console.log(document.querySelector("#output"));
-}
+document.querySelector("#convertBtn").addEventListener('click', () => {document.querySelector("#output").value = document.querySelector("#binaryInput").value.split('').reverse().map((bit, index) =>
+   {
+    bit = parseInt(bit);
+    bit = bit >= 0 && bit <=1? bit * (2 ** index) : 0;
+    return bit
+  }).reduce((sum, val) => sum + val, 0)})
+
+  //ASSISTED BY TONNNNNY
